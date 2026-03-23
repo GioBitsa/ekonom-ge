@@ -1,0 +1,58 @@
+<svg width="64" height="48" viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stripes -->
+  <rect width="64" height="48" fill="#fff"/>
+  
+  <!-- Red stripes -->
+  <g fill="#b22234">
+    <rect y="0" width="64" height="3.69"/>
+    <rect y="7.38" width="64" height="3.69"/>
+    <rect y="14.76" width="64" height="3.69"/>
+    <rect y="22.14" width="64" height="3.69"/>
+    <rect y="29.52" width="64" height="3.69"/>
+    <rect y="36.9" width="64" height="3.69"/>
+    <rect y="44.28" width="64" height="3.69"/>
+  </g>
+
+  <!-- Blue canton -->
+  <rect width="28" height="26.6" fill="#3c3b6e"/>
+
+  <!-- Stars (simplified dots) -->
+  <g fill="#fff">
+    <!-- rows of stars -->
+    <circle cx="3" cy="3" r="0.8"/>
+    <circle cx="6" cy="5" r="0.8"/>
+    <circle cx="9" cy="3" r="0.8"/>
+    <circle cx="12" cy="5" r="0.8"/>
+    <circle cx="15" cy="3" r="0.8"/>
+    <circle cx="18" cy="5" r="0.8"/>
+    <circle cx="21" cy="3" r="0.8"/>
+    <circle cx="24" cy="5" r="0.8"/>
+
+    <circle cx="3" cy="9" r="0.8"/>
+    <circle cx="6" cy="11" r="0.8"/>
+    <circle cx="9" cy="9" r="0.8"/>
+    <circle cx="12" cy="11" r="0.8"/>
+    <circle cx="15" cy="9" r="0.8"/>
+    <circle cx="18" cy="11" r="0.8"/>
+    <circle cx="21" cy="9" r="0.8"/>
+    <circle cx="24" cy="11" r="0.8"/>
+
+    <circle cx="3" cy="15" r="0.8"/>
+    <circle cx="6" cy="17" r="0.8"/>
+    <circle cx="9" cy="15" r="0.8"/>
+    <circle cx="12" cy="17" r="0.8"/>
+    <circle cx="15" cy="15" r="0.8"/>
+    <circle cx="18" cy="17" r="0.8"/>
+    <circle cx="21" cy="15" r="0.8"/>
+    <circle cx="24" cy="17" r="0.8"/>
+
+    <circle cx="3" cy="21" r="0.8"/>
+    <circle cx="6" cy="23" r="0.8"/>
+    <circle cx="9" cy="21" r="0.8"/>
+    <circle cx="12" cy="23" r="0.8"/>
+    <circle cx="15" cy="21" r="0.8"/>
+    <circle cx="18" cy="23" r="0.8"/>
+    <circle cx="21" cy="21" r="0.8"/>
+    <circle cx="24" cy="23" r="0.8"/>
+  </g>
+</svg>

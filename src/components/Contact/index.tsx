@@ -3,6 +3,7 @@
 import React, { useReducer, useState } from "react";
 import styles from "./Contact.module.scss";
 import Input from "../common/Input";
+import { useTranslations } from "next-intl";
 
 type FormState = {
   name: string;
@@ -37,6 +38,7 @@ const formReducer = (state: FormState, action: FormAction): FormState => {
 };
 
 const Contact = () => {
+  const t = useTranslations();
   const [state, dispatch] = useReducer(formReducer, initialState);
   const [message, setMessage] = useState<{
     type: "success" | "error";
@@ -97,16 +99,14 @@ const Contact = () => {
   return (
     <section id="contact" className={styles.wrapper}>
       <div className={styles.inner}>
-        <h2 className="sectionHeader">Get in touch</h2>
-        <p className="sectionDescription">
-          Have any questions? Contact us below
-        </p>
+        <h2 className="sectionHeader">{t("contact-title")}</h2>
+        <p className="sectionDescription">{t("contact-desc")}</p>
 
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.form__inline}>
             <Input
               name="name"
-              placeholder="name"
+              placeholder={t("name")}
               value={state.name}
               onChange={(val) =>
                 dispatch({
@@ -118,7 +118,7 @@ const Contact = () => {
             />
             <Input
               name="phone"
-              placeholder="phone"
+              placeholder={t("phone")}
               value={state.phone}
               onChange={(val) =>
                 dispatch({
@@ -131,7 +131,7 @@ const Contact = () => {
           </div>
           <Input
             name="email"
-            placeholder="email"
+            placeholder={t("email")}
             value={state.email}
             onChange={(val) =>
               dispatch({
@@ -143,7 +143,7 @@ const Contact = () => {
           />
 
           <button type="submit" className={styles.form__submit}>
-            Submit
+            {t("submit")}
           </button>
 
           {message && (

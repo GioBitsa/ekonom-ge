@@ -1,0 +1,34 @@
+{
+  "home": "Home",
+  "features": "Features",
+  "reviews": "Reviews",
+  "contact": "Contact",
+
+  "hero-title": "Orthopedic Pillow",
+  "hero-desc": "High-quality orthopedic pillow sized 64x40 cm. Breathable, filled with 800g of premium material, machine washable. Ideal for proper neck and back support.",
+  "hero-button": "Buy Now",
+  "hero-price": "$21",
+  "hero-feature-1": "Free Delivery",
+  "hero-feature-2": "Warranty",
+  "hero-feature-3": "30-Day Return",
+
+  "details-title": "Benefits of the Orthopedic Pillow",
+  "details-item-1-title": "Ergonomic Design",
+  "details-item-1-desc": "Provides proper support for the neck and spine",
+  "details-item-2-title": "High-Quality Materials",
+  "details-item-2-desc": "Breathable and durable filling",
+  "details-item-3-title": "Modern Design",
+  "details-item-3-desc": "Fits any bedroom interior",
+
+  "reviews-title": "Customer Reviews",
+  "reviews-desc": "What our customers say about our product",
+
+  "contact-title": "Contact Us",
+  "contact-desc": "Leave your details if you have questions about ordering or the orthopedic pillow",
+
+  "name": "Name",
+  "phone": "Phone Number",
+  "email": "Email",
+  "submit": "Submit",
+  "address-tbilisi-georgia": "Tbilisi, Georgia"
+}

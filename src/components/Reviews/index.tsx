@@ -8,13 +8,15 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { truncateText } from "@/utils/truncateText";
+import { useTranslations } from "next-intl";
 
 const Reviews = () => {
+  const t = useTranslations();
   return (
     <section id="reviews" className={styles.wrapper}>
       <div className={styles.inner}>
-        <h2 className="sectionHeader">Customer Reviews</h2>
-        <p className="sectionDescription">What our customers are saying</p>
+        <h2 className="sectionHeader">{t("reviews-title")}</h2>
+        <p className="sectionDescription">{t("reviews-desc")}</p>
 
         <div className={styles.content}>
           <Swiper
@@ -35,7 +37,7 @@ const Reviews = () => {
                 <div className={styles.content__item}>
                   <div className={styles.content__item__user}>
                     <img
-                      src={item.src}
+                      src={item.src || "/icons/user.svg"}
                       alt={item.name}
                       className={styles.content__item__user__image}
                     />

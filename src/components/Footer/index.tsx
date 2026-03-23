@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
+import { useTranslations } from "next-intl";
 import styles from "./Footer.module.scss";
 import { menuItems } from "@/data";
 
 const Footer = () => {
+  const t = useTranslations();
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -20,30 +21,30 @@ const Footer = () => {
     <footer className={styles.wrapper}>
       <div className={styles.inner}>
         <div className={styles.logo}>
-          <img src="/icons/logo.jpg" alt="logo" />
-          <p>RODA</p>
+          <img src="/icons/logo.jpeg" alt="logo" title="Ekonom.ge" />
+          <p>EKONOM.GE</p>
         </div>
         <div className={styles.content}>
           <div className={styles.content__column}>
             <div className={styles.content__inline}>
-              <img src="/icons/phone.svg" alt="phone" />
+              <img src="/icons/phone.svg" alt="phone" title="phone" />
               <p>+123456789</p>
             </div>
             <div className={styles.content__inline}>
-              <img src="/icons/pin.svg" alt="pin" />
-              <p>123 Sireet Name, Cy, State,</p>
+              <img src="/icons/pin.svg" alt="pin" title="pin" />
+              <p>123 {t("address-tbilisi-georgia")}</p>
             </div>
           </div>
           <ul className={styles.content__list}>
             {menuItems.map((item) => (
               <li key={item.id} onClick={() => handleScroll(item.id)}>
-                {item.name}
+                {t(item.name)}
               </li>
             ))}
           </ul>
         </div>
         <p className={styles.copyright}>
-          © {new Date().getFullYear()} RODA. All rights reserved.
+          © {new Date().getFullYear()} EKONOM.GE. All rights reserved.
         </p>
       </div>
     </footer>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/reset.scss";
 import "./globals.scss";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +15,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RODA – Premium Wooden Chairs & Furniture",
+  title: "ორთოპედიული ბალიში | Ekonom.ge – კომფორტი და ჯანსაღი ძილი",
   description:
-    "Discover RODA's handcrafted wooden chairs and furniture. High-quality design, comfort, and style for your home or office.",
+    "აღმოაჩინე მაღალი ხარისხის ორთოპედიული ბალიში Ekonom.ge-ზე. ჰაერგამტარი მასალა, 800გრ შემავსებელი, ირეცხება სარეცხ მანქანაში. იდეალურია ჯანსაღი ძილისთვის, კისრისა და ზურგის მხარდაჭერისთვის. ზომა: 64x40 სმ.",
+  keywords: [
+    "ორთოპედიული ბალიში",
+    "ბალიში კისრისთვის",
+    "comfort pillow",
+    "orthopedic pillow",
+    "ჰაერგამტარი ბალიში",
+    "machine washable pillow",
+    "sleep support pillow",
+    "Ekonom.ge",
+  ],
   icons: {
     icon: "/favicon.ico",
   },

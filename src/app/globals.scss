@@ -52,6 +52,22 @@ body {
   }
 }
 
+.locale {
+  width: 24px;
+  cursor: pointer;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+  }
+
+  &:hover img {
+    transform: scale(1.2);
+  }
+}
+
 .sectionHeader {
   font-size: 28px;
   font-weight: 500;
@@ -62,6 +78,6 @@ body {
 .sectionDescription {
   font-size: 18px;
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   text-align: center;
 }
