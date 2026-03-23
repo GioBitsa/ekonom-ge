@@ -12,6 +12,7 @@ import { useTranslations } from "next-intl";
 
 const Reviews = () => {
   const t = useTranslations();
+
   return (
     <section id="reviews" className={styles.wrapper}>
       <div className={styles.inner}>
@@ -22,7 +23,7 @@ const Reviews = () => {
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            // autoplay={{ delay: 3000, disableOnInteraction: false }}
             loop={true}
             slidesPerView={3}
             spaceBetween={40}
@@ -46,6 +47,7 @@ const Reviews = () => {
                       <Stars rate={item.rate} />
                     </div>
                   </div>
+
                   <div className={styles.content__item__desc}>
                     {truncateText(item.desc, 150)}
                   </div>

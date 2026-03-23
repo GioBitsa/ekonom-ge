@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Hero.module.scss";
 import { HeroSectionData } from "@/data";
@@ -15,7 +17,17 @@ export default function Hero() {
 
           <div className={styles.price}>{t("hero-price")}</div>
 
-          <button className={styles.cta}>{t("hero-button")}</button>
+          <button
+            className={styles.cta}
+            onClick={() =>
+              window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: "smooth",
+              })
+            }
+          >
+            {t("hero-button")}
+          </button>
 
           <div className={styles.badges}>
             <span>🚚 {t("hero-feature-1")}</span>
