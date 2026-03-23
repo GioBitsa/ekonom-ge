@@ -1,0 +1,67 @@
+/* globals.scss */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --bg-main: #ffffff;
+  --bg-soft: #faf7f4;
+  --bg-dark: #111111;
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #6b6b6b;
+
+  --input-bg: #f8f3f3;
+  --input-border: #f0edee;
+
+  --accent: #f0b429;
+  --accent-hover: #e0a818;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Layout */
+  --container-width: 1200px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  border: 1px solid var(--text-primary);
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.3s;
+  background-color: var(--white);
+
+  &:hover {
+    padding: 3px;
+  }
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.sectionHeader {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.sectionDescription {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--text-primary);
+  text-align: center;
+}

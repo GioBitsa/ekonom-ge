@@ -1,0 +1,85 @@
+@use "@/styles/mixins" as *;
+
+.wrapper {
+  background-color: var(--white);
+}
+
+.inner {
+  @include container;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 250px;
+      height: 250px;
+      border-radius: 100%;
+      overflow: hidden;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+
+      h6 {
+        font-size: 21px;
+        font-weight: 500;
+        color: var(--text-primary);
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text-primary);
+      }
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+
+    &__item {
+      border-radius: 0;
+      padding-bottom: 60px;
+      border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+
+      &:last-child {
+        border: none;
+      }
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+  }
+}
